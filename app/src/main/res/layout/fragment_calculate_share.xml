@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CalculateShareFragment">
+
+
+    <TextView
+        android:id="@+id/fragment_calculate_total_bill_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:text="Total Bill: "
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textview_total_persons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/fragment_calculate_total_bill_txt"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Persons" />
+
+
+    <Spinner
+        android:id="@+id/totalPersonsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_calculate_total_bill_txt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/textview_total_persons"/>
+
+
+    <TextView
+        android:id="@+id/fragment_calculate_tip_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPersonsSpinner"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TIP"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/fragment_calculate_tip_title_txt"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:id="@+id/fragment_calculate_seekpercentage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/fragment_calculate_tip_title_txt"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/fragment_calculate_tipPercentage_seekbar"
+        android:gravity="center"
+        android:text="00.00%" />
+
+    <EditText
+        android:id="@+id/fragment_calculate_tip_txt"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_below="@id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:hint="00.00"
+        android:inputType="number"
+        android:text="00.00"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_below="@id/fragment_calculate_tip_txt"
+       android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:text="Each person must pay" />
+
+    <TextView
+        android:id="@+id/fragment_calculate_each_pay_txt"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="00.00"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
